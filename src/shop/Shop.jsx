@@ -5,7 +5,7 @@ const Shop = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch("https://book-store-backend-blond.vercel.app/all-books")
+    fetch("https://book-store-backend-blond.vercel.app/api/all-books")
       .then((res) => res.json())
       .then((data) => setBooks(data));
   }, []);

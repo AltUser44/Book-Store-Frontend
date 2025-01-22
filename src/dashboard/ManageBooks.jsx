@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const ManageBooks = () => {
   const [allBooks, setAllBooks] = useState([]);
   useEffect(() => {
-    fetch('https://book-store-backend-blond.vercel.app/all-books')
+    fetch('https://book-store-backend-blond.vercel.app/api/all-books')
       .then((res) => res.json())
       .then((data) => setAllBooks(data));
   }, []);
@@ -14,7 +14,7 @@ const ManageBooks = () => {
   // Delete a book from the table
   const handleDelete = (id) => {
     console.log(id);
-    fetch(`https://book-store-backend-blond.vercel.app/book/${id}`, {
+    fetch(`https://book-store-backend-blond.vercel.app/api/book/${id}`, {
       method: 'DELETE',
     }).then((res) => res.json()).then((data) => {
       alert("Book deleted successfully!");

@@ -1,4 +1,4 @@
-**MERN Stack Book Store App
+**MERN Stack Book Store App**
 
 
 MERN Stack Online Book Store App, built to deliver a user-friendly and efficient interface for both customers and admins. Designed for seamless usability, the app provides an intuitive experience for book browsing, purchasing, and inventory management.

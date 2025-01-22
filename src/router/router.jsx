@@ -69,7 +69,7 @@ import Help from "../dashboard/Help";
       {
         path: "/admin/dashboard/edit-books/:id",
         element: <EditBooks />,
-        loader: ({params}) => fetch(`https://book-store-backend-blond.vercel.app/book/${params.id}`)
+        loader: ({params}) => fetch(`https://book-store-backend-blond.vercel.app/api/book/${params.id}`)
       },
       
     ],

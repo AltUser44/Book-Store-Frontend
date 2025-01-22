@@ -66,7 +66,7 @@ const EditBooks = () => {
   
       //console.log(bookObj);
       //update book data
-      fetch(`https://book-store-backend-blond.vercel.app/book/${id}`, {
+      fetch(`https://book-store-backend-blond.vercel.app/api/book/${id}`, {
         method: "PATCH",
         headers: {
           'Content-Type': 'application/json'

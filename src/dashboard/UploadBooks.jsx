@@ -61,7 +61,7 @@ const UploadBooks = () => {
     console.log(bookObj);
 
     // send data to mongoDB
-    fetch("https://book-store-backend-blond.vercel.app/upload-book", {
+    fetch("https://book-store-backend-blond.vercel.app/api/upload-book", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -45,7 +45,7 @@ import Help from "../dashboard/Help";
         {
           path: "/book/:id",
           element: <SingleBook/>,
-          loader: ({params}) => fetch(`https://book-store-backend-blond.vercel.app/book/${params.id}`)
+          loader: ({ params }) => fetch(`https://book-store-backend-blond.vercel.app/api/book/${params.id}`)
         }
       ]
     },
